@@ -1,0 +1,35 @@
+=========================================================
+PLANT DISEASE DETECTION SYSTEM - DEPLOYMENT INSTRUCTIONS
+=========================================================
+Made by: Navalrag V P(Group 1)
+
+ENVIRONMENT SETUP:
+This application was built and tested in an isolated virtual environment to prevent dependency conflicts. Please use Miniconda/Anaconda to execute the application locally.
+
+PREREQUISITES:
+- Miniconda or Anaconda installed
+- Python 3.10
+
+EXECUTION PROTOCOL:
+
+1. Extract the project zip file to your local machine.
+2. Open your Anaconda Prompt (Miniconda).
+
+3. Create the dedicated virtual environment:
+   conda create -n plant_env python=3.10 -y
+
+4. Activate the environment:
+   conda activate plant_env
+
+5. CRITICAL STEP: Navigate your terminal into the extracted folder where 'app.py' is located using the 'cd' command. 
+   (Example: cd "C:\Users\EvaluatorName\Downloads\Plant Disease Detection")
+
+6. Install the required dependencies:
+   pip install tensorflow streamlit pillow numpy
+
+7. Launch the web application:
+   streamlit run app.py 
+
+The Streamlit server will start and automatically open the diagnostic interface in your default web browser (usually at http://localhost:8501).
+
+=========================================================
